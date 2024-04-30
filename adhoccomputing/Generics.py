@@ -32,7 +32,7 @@ class GenericMessageHeader:
     self.interfaceid = interfaceid
     self.sequencenumber = sequencenumber
   def __str__(self) -> str:
-    return f"GenericMessageHeader: TYPE: {self.messagetype} FROM: {self.messagefrom} TO: {self.messagefrom} NEXTHOP: {self.nexthop} INTERFACEID: {self.interfaceid} SEQUENCE#: {self.sequencenumber}"
+    return f"GenericMessageHeader: TYPE: {self.messagetype} FROM: {self.messagefrom} TO: {self.messageto} NEXTHOP: {self.nexthop} INTERFACEID: {self.interfaceid} SEQUENCE#: {self.sequencenumber}"
 
 class EventTypes(Enum):
   INIT = "init"
